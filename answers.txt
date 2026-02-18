@@ -1,0 +1,10 @@
+# Lesson 5 Answers
+
+1. What does `npm run dev` do?
+- It starts a local development server and shows the app in the browser. It also reloads the page automatically when code changes.
+
+2. What is the purpose of `vite.config.js`?
+- It has the settings for the Vite build tool. It can include plugins and rules for building the app.
+
+3. What happens when you run `npm run build`?
+- It creates an optimized production version of the app in the `dist/` folder. This version is ready to deploy.
