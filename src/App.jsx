@@ -1,8 +1,25 @@
+const items = ['Apples', 'Bananas', 'Cherries', 'Lime'];
+
+function Header() {
+  return <h1>My Grocery List</h1>;
+}
+
+function List({ items }) {
+  return (
+    <ul>
+      {items.map((item, index) => (
+        <li key={index}>{item}</li>
+      ))}
+    </ul>
+  );
+}
+
 function App() {
   return (
     <div>
-      <h1>Hello React!</h1>
-      <p>This is your first React component.</p>
+      <Header />
+      <List items={items} />
+      <List items={items} />
     </div>
   );
 }
